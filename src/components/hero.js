@@ -2,6 +2,7 @@ import React from 'react'
 
 import ButtonAll from './button'
 import './hero.css'
+import { Link } from 'react-router-dom/cjs/react-router-dom.min'
 
 const Hero = ({ title, description, action1, action2, titleButton1, titleButton2 }) => {
     return (
@@ -16,12 +17,14 @@ const Hero = ({ title, description, action1, action2, titleButton1, titleButton2
             </div>
             <div className="buttons">
                 <div className="button1">
-                    <ButtonAll
+                <Link to="/discover">
+                <ButtonAll
                     text={titleButton1}
                     primary
                     type="button"
                     onClick={action1}
                     />
+                </Link>
                 </div>
                 <div className="button2">
                     <ButtonAll

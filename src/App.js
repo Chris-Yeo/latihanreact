@@ -7,6 +7,7 @@ import {
 
 import Home from './pages/home'
 import './App.css';
+import DiscoverAll from './pages/discover'
 
 function App() {
   return (
@@ -15,6 +16,9 @@ function App() {
       <Switch>
         <Route exact path="/">
           <Home />
+        </Route>
+        <Route path="/discover">
+          <DiscoverAll />
         </Route>
       </Switch>
     </Router>
